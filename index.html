@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,346 +8,182 @@
     <link rel="stylesheet" href="assents/css/global.css">
     <title>Luan Fabruzzi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-<!-- CURSOR -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- PROGRESS -->
-<div id="progress"></div>
+    <!-- PROGRESS -->
+    <div id="progress"></div>
 
-<!-- NAV -->
-<nav>
+    <!-- NAV -->
+    <nav class="main-nav">
+        <a class="nav-logo" href="index.html">Luan<span>.</span>Fabruzzi</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+            <button class="nav-close" id="navClose" aria-label="Fechar menu">×</button>
+            <ul class="nav-links">
+                <li><a href="pages/formacao.html">Formação</a></li>
+                <li><a href="https://github.com/luanfabruzzi" target="_blank">GitHub ↗</a></li>
+                <li><a href="https://www.instagram.com/fabruzzi.dev/" target="_blank">Instagram ↗</a></li>
+                <li><a href="https://www.linkedin.com/in/luanfabruzzi/" target="_blank">LinkedIn ↗</a></li>
+            </ul>
+        </div>
+        <div class="nav-mask" id="navMask"></div>
+    </nav>
 
-    <ul class="nav-links">
-        <li><a href="#educacao">Formação</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="https://github.com/luanfabruzzi" target="_blank">GitHub ↗</a></li>
-        <li><a href="https://www.linkedin.com/in/luanfabruzzi/" target="_blank">LinkedIn ↗</a></li>
-    </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-left">
-        <div class="hero-tag">Desenvolvedor full-stack</div>
-        <h1 class="hero-name">
-            Luan<br>
-            <span class="last">Fabruzzi</span>
-        </h1>
-        <p class="hero-role">
-           Desenvolvedor Full-Stack <span>(.NET Core & Angular)</span> Técnico em Desenv. de Sistemas | C# | Node | GO & SQL
-        </p>
-        <p class="hero-bio">
-            Formado como Técnico em Desenvolvimento de Sistemas e atualmente graduando em Engenharia de Software, uno o conhecimento prático da base técnica com uma visão arquitetural sólida. Possuo experiência no desenvolvimento de aplicações ponta a ponta, com foco principal no ecossistema .NET (C#) e Angular.
-        </p>
-        <div class="hero-actions">
-            <a href="#projetos" class="btn-primary">Ver Projetos</a>
-            <a href="https://github.com/luanfabruzzi" target="_blank" class="btn-ghost">GitHub ↗</a>
-            <a href="https://www.linkedin.com/in/luanfabruzzi/" target="_blank" class="btn-ghost">LinkedIn ↗</a>
-        </div>
-    </div>
-
-    <div class="hero-right">
-        <div class="hero-photo-wrap">
-            <img src="assents/img/LuanFabruzzi.jpeg" alt="Luan Fabruzzi" class="hero-photo">
-        </div>
-        <div class="float-card fc1">
-            <strong>3+</strong>
-            Projetos ativos
-        </div>
-        <div class="float-card fc2">
-            <strong>B1</strong>
-            Inglês técnico
-        </div>
-    </div>
-</section>
-
-<!-- STACK -->
-<div class="stack-section">
-    <span class="stack-label">BACK-END</span>
-    <div class="stack-scroll">
-        <div class="stack-chip">
-            <img src="assents/img/linguagem/csharp.png" alt="C#"> C#
-        </div>
-        <div class="stack-chip">
-            <img src="assents/img/linguagem/node.png" alt="Node"> Node
-        </div>
-        <div class="stack-chip">
-            <img src="assents/img/linguagem/go.png" alt="GO"> GO
-        </div>
-        <div class="stack-chip">
-            <img src="assents/img/linguagem/POSTGREE.png" alt="PostgreSQL"> PostgreSQL
-        </div>
-        <div class="stack-chip">
-            <img src="assents/img/linguagem/mongoDB.png" alt="MongoDB"> MongoDB
-        </div>
-    </div>
-</div>
-
-<div class="stack-section">
-    <span class="stack-label">FRONT-END</span>
-    <div class="stack-scroll">
-        <div class="stack-chip">
-            <img src="assents/img/linguagem/angular.png" alt="Angular"> Angular
-        </div>
-        <div class="stack-chip">
-            <img src="assents/img/linguagem/HTML5.png" alt="HTML5"> HTML5
-        </div>
-        <div class="stack-chip">
-            <img src="assents/img/linguagem/CSS3.png" alt="CSS3"> CSS3
-        </div>
-        <div class="stack-chip">
-            <img src="assents/img/linguagem/JS.png" alt="JS"> JavaScript
-        </div>
-    </div>
-</div>
-
-
-<!-- EDUCAÇÃO -->
-<section id="educacao">
-    <p class="section-eyebrow reveal">/ educação</p>
-    <h2 class="section-title reveal">Formação &amp; <em>Cursos</em></h2>
-
-    <div class="edu-grid reveal">
-        <!-- Formação acadêmica -->
-        <div class="edu-group">
-            <p class="edu-group-title">Acadêmica</p>
-
-            <div class="acc-item">
-                <button class="acc-trigger" aria-expanded="false">
-                    <div class="acc-title-wrap">
-                        <h3>Engenharia de Software</h3>
-                        <p>UNINTER · 2026–2030</p>
-                    </div>
-                    <div class="acc-icon">+</div>
-                </button>
-                <div class="acc-body">
-                    <div class="acc-inner">
-                        <div class="acc-inner-pad">
-                            Atualmente, aprofundo meus conhecimentos teóricos e analíticos no Bacharelado em Engenharia de Software na UNINTER, com foco especial em qualidade de software, modelagem de dados e o desenvolvimento de sistemas de alta escala.
-                            <br><span class="tag">Em andamento</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="acc-item">
-                <button class="acc-trigger" aria-expanded="false">
-                    <div class="acc-title-wrap">
-                        <h3>Técnico em Desenvolvimento de Sistemas</h3>
-                        <p>Inah de Mello · 2023–2025</p>
-                    </div>
-                    <div class="acc-icon">+</div>
-                </button>
-                <div class="acc-body">
-                    <div class="acc-inner">
-                        <div class="acc-inner-pad">
-                            Profissional formado em Desenvolvimento de Sistemas pela rede estadual (Inah de Mello), com certificação Sistec/MEC. Ao longo de 2 anos, construí uma base sólida em engenharia de software e desenvolvimento web. Minha dedicação acadêmica foi validada pela liderança como representante de turma e pelo título de melhor aluno, garantindo um aporte técnico de R$ 3.000,00 em livros para aprofundamento em stacks de ponta.
-                            <br><span class="tag">Concluído · Reconhecido Sistec/MEC</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-tag">Software Engineer & IA</div>
+            <h1 class="hero-name">
+                Luan<br>
+                <span class="last">Fabruzzi</span>
+            </h1>
+            <p class="hero-role">
+                <span>Software Engineer</span> | Backend Developer (.NET & Node.js) | Python & AI Automation | <span>Técnico em Desenv. de Sistemas</span>
+            </p>
+            <p class="hero-bio">
+                Formado como Técnico em Desenvolvimento de Sistemas e atualmente graduando em Engenharia de Software,
+                uno o conhecimento prático da base técnica com uma visão arquitetural sólida. Possuo experiência no
+                desenvolvimento de aplicações ponta a ponta, com foco principal no ecossistema .NET (C#).
+            </p>
+            <div class="hero-actions">
+                <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                <a href="https://github.com/luanfabruzzi" target="_blank" class="btn-ghost">GitHub ↗</a>
+                <a href="https://www.linkedin.com/in/luanfabruzzi/" target="_blank" class="btn-ghost">LinkedIn ↗</a>
             </div>
         </div>
 
-        <!-- Cursos complementares -->
-        <div class="edu-group">
-            <p class="edu-group-title">Complementar</p>
-
-            <div class="acc-item">
-                <button class="acc-trigger" aria-expanded="false">
-                    <div class="acc-title-wrap">
-                        <h3>Formação .NET Developer</h3>
-                        <p>DIO · 2026 · 93h</p>
-                    </div>
-                    <div class="acc-icon">+</div>
-                </button>
-                <div class="acc-body">
-                    <div class="acc-inner">
-                        <div class="acc-inner-pad">
-                            C#, ASP.NET Core, Entity Framework, MVC, APIs RESTful e boas práticas de arquitetura.
-                            <br><span class="tag">Concluído</span>
-                        </div>
-                    </div>
-                </div>
+        <div class="hero-right">
+            <div class="hero-photo-wrap">
+                <img src="assents/img/foto_profi.jpeg" alt="Luan Fabruzzi" class="hero-photo">
             </div>
-
-            <div class="acc-item">
-                <button class="acc-trigger" aria-expanded="false">
-                    <div class="acc-title-wrap">
-                        <h3>Formação Angular Developer</h3>
-                        <p>DIO · 2026 · 39h</p>
-                    </div>
-                    <div class="acc-icon">+</div>
-                </button>
-                <div class="acc-body">
-                    <div class="acc-inner">
-                        <div class="acc-inner-pad">
-                            Componentização, hooks, estado global e integração com APIs.
-                            <br><span class="tag">Em andamento</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="float-card fc2">
+                <strong>B1</strong>
+                Inglês técnico
             </div>
+        </div>
+    </section>
 
-            <div class="acc-item">
-                <button class="acc-trigger" aria-expanded="false">
-                    <div class="acc-title-wrap">
-                        <h3>Inteligência Artificial</h3>
-                        <p>Ecoa PUC-Rio · 2026 · 5 meses</p>
-                    </div>
-                    <div class="acc-icon">+</div>
-                </button>
-                <div class="acc-body">
-                    <div class="acc-inner">
-                        <div class="acc-inner-pad">
-                            Fundamentos de IA, machine learning e aplicações práticas com Python.
-                            <br><span class="tag">Em andamento</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- STACK -->
+    <div class="stack-section">
+        <span class="stack-label">BACK-END</span>
+        <div class="stack-scroll">
+            <div class="stack-chip">
+                <img src="assents/img/linguagem/csharp.png" alt="C#"> C#
             </div>
-
-                        <div class="acc-item">
-                <button class="acc-trigger" aria-expanded="false">
-                    <div class="acc-title-wrap">
-                        <h3>Formação JavaScript Developer</h3>
-                        <p>DIO · 2026 · 39h</p>
-                    </div>
-                    <div class="acc-icon">+</div>
-                </button>
-                <div class="acc-body">
-                    <div class="acc-inner">
-                        <div class="acc-inner-pad">
-                            Durante esta formação, aprofundei meus conhecimentos em JavaScript, dominando o uso de métodos e funções. Desenvolvi habilidades sólidas em Programação Orientada a Protótipos e na manipulação dinâmica do DOM.
-                            <br><span class="tag">Concluído</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="stack-chip">
+                <img src="assents/img/linguagem/node.png" alt="Node"> Node
             </div>
-
-            <div class="acc-item">
-                <button class="acc-trigger" aria-expanded="false">
-                    <div class="acc-title-wrap">
-                        <h3>Informática com Programação</h3>
-                        <p>Pulse Mais · 2025 · 7 meses</p>
-                    </div>
-                    <div class="acc-icon">+</div>
-                </button>
-                <div class="acc-body">
-                    <div class="acc-inner">
-                        <div class="acc-inner-pad">
-                            Informática intermediária com módulos de programação, contando com domínio de ferramentas como Git e Github e Microsoft 365.
-                            <br><span class="tag">Concluído</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="stack-chip">
+                <img src="assents/img/linguagem/go.png" alt="GO"> GO
             </div>
-
-            <div class="acc-item">
-                <button class="acc-trigger" aria-expanded="false">
-                    <div class="acc-title-wrap">
-                        <h3>Inglês</h3>
-                        <p>Uninter &amp; Duolingo</p>
-                    </div>
-                    <div class="acc-icon">+</div>
-                </button>
-                <div class="acc-body">
-                    <div class="acc-inner">
-                        <div class="acc-inner-pad">
-                            Leitura técnica e escrita profissional. Comunicação em ambientes de trabalho internacionais.
-                            <br><span class="tag">B1 · Intermediário</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="stack-chip">
+                <img src="assents/img/linguagem/POSTGREE.png" alt="PostgreSQL"> PostgreSQL
+            </div>
+            <div class="stack-chip">
+                <img src="assents/img/linguagem/mongoDB.png" alt="MongoDB"> MongoDB
             </div>
         </div>
     </div>
-</section>
 
-<!-- PROJETOS -->
-<section id="projetos">
-    <p class="section-eyebrow reveal">/ portfólio</p>
-    <h2 class="section-title reveal">Projetos <em>Selecionados</em></h2>
-
-    <div class="projects-list">
-
-        <div class="proj-item reveal">
-            <div class="proj-num">01</div>
-            <div class="proj-info">
-                <h3>Sistema de Biblioteca Local</h3>
-                <p>API ASP.NET Core (.NET 10.0) com autenticação JWT e gerenciamento completo de alunos, diretores, livros e agendamentos de empréstimos.</p>
-                <div class="proj-tags">
-                    <span class="tag">C# / .NET 10</span>
-                    <span class="tag">ASP.NET Core</span>
-                    <span class="tag">REST API</span>
-                    <span class="tag">JWT</span>
-                </div>
-                <a href="https://github.com/luanfabruzzi/sistema-bibliotecario-local" target="_blank" class="proj-link">
-                    Ver no GitHub <span>→</span>
-                </a>
+    <div class="stack-section">
+        <span class="stack-label">FRONT-END</span>
+        <div class="stack-scroll">
+            <div class="stack-chip">
+                <img src="assents/img/linguagem/HTML5.png" alt="HTML5"> HTML5
             </div>
-            <div class="proj-img-wrap">
-                <img src="assents/img/project/inah.jpg" alt="Sistema Biblioteca" class="proj-img">
+            <div class="stack-chip">
+                <img src="assents/img/linguagem/CSS3.png" alt="CSS3"> CSS3
+            </div>
+            <div class="stack-chip">
+                <img src="assents/img/linguagem/JS.png" alt="JS"> JavaScript
+            </div>
+            <div class="stack-chip">
+                <img src="assents/img/linguagem/react.png" alt="React"> React
             </div>
         </div>
-
-        <div class="proj-item reveal">
-            <div class="proj-num">02</div>
-            <div class="proj-info">
-                <h3>AutoPlain — Análise de Dados</h3>
-                <p>TCC Técnico: ferramenta em Python com machine learning para análise inteligente de planilhas e geração automática de insights e relatórios.</p>
-                <div class="proj-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">TCC</span>
-                    <span class="tag">Pandas</span>
-                    <span class="tag">Flask</span>
-                </div>
-                <a href="https://github.com/luanfabruzzi/AutoPlain" target="_blank" class="proj-link">
-                    Ver no GitHub <span>→</span>
-                </a>
-            </div>
-            <div class="proj-img-wrap">
-                <img src="assents/img/project/AutoPlain.png" alt="AutoPlain" class="proj-img">
-            </div>
-        </div>
-
-        <div class="proj-item reveal">
-            <div class="proj-num">03</div>
-            <div class="proj-info">
-                <h3>NewMarriage</h3>
-                <p>Sistema de gestão de casamentos 100% responsivo e offline. Lista de presentes, PIX direto e dashboard automático para o casal.</p>
-                <div class="proj-tags">
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">PWA / Offline</span>
-                    <span class="tag">PIX</span>
-                    <span class="tag">Dashboard</span>
-                </div>
-                <a href="https://github.com/luanfabruzzi/NewMarriage" target="_blank" class="proj-link">
-                    Ver no GitHub <span>→</span>
-                </a>
-            </div>
-            <div class="proj-img-wrap">
-                <img src="assents/img/project/NewMarriage.png" alt="NewMarriage" class="proj-img">
-            </div>
-        </div>
-
     </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-    <!-- seu footer atual (brand + copy) -->
-    <div class="footer-content">
-        <div class="footer-brand">Luan<span>.</span>Fabruzzi</div>
-        <p class="footer-copy">© 2026 · Portfólio de Desenvolvedor Full-Stack</p>
-    </div>
-</footer>
-<script src="assents/js/script.js"></script>
+    <!-- CONTACT -->
+    <section id="contato">
+        <p class="section-eyebrow reveal">/ contato</p>
+        <h2 class="section-title reveal">Fale comigo via <em>WhatsApp</em></h2>
+        <div class="contact-grid reveal">
+            <div class="contact-copy">
+                    <p>Envie os detalhes do seu projeto para receber um retorno direto. Preencha o briefing com o nome da pessoa ou empresa, cargo, tipo de projeto e uma descrição clara do objetivo.</p>
+                    <ul class="contact-list">
+                        <li>Nome ou empresa</li>
+                        <li>Cargo / função</li>
+                        <li>Projeto</li>
+                        <li>Tipo de projeto</li>
+                        <li>Descrição do projeto</li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="whatsappForm">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label class="form-label" for="clientName">Nome ou empresa</label>
+                            <input class="form-input" type="text" id="clientName" name="clientName" placeholder="Nome ou empresa" required>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label" for="clientRole">Cargo / função</label>
+                            <input class="form-input" type="text" id="clientRole" name="clientRole" placeholder="Ex: CEO, Product Owner, CTO" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label class="form-label" for="projectName">Projeto</label>
+                            <input class="form-input" type="text" id="projectName" name="projectName" placeholder="Nome do projeto" required>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label" for="projectType">Tipo de projeto</label>
+                            <select class="form-select" id="projectType" name="projectType" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="Site de página única">Site de página única</option>
+                                <option value="Site institucional">Site institucional</option>
+                                <option value="Sistema">Sistema</option>
+                                <option value="Automação">Automação</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label" for="projectDescription">Descrição do projeto</label>
+                        <textarea class="form-textarea" id="projectDescription" name="projectDescription" placeholder="Descreva o objetivo, público e funcionalidades desejadas" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-whatsapp">Enviar pelo WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-brand-wrap">
+            <div class="footer-brand">Luan<span>.</span>Fabruzzi</div>
+            <p class="footer-copy">© 2026 · Portfólio de Engenheiro de Software</p>
+        </div>
+        <div class="footer-column">
+            <div class="footer-title">Contato</div>
+            <a class="footer-link" href="mailto:luanfabruzzidev@gmail.com">Email</a>
+            <a class="footer-link" href="https://wa.me/5511963081053" target="_blank">WhatsApp</a>
+            <a class="footer-link" href="https://www.instagram.com/fabruzzi.dev/" target="_blank">Instagram</a>
+            <a class="footer-link" href="https://www.linkedin.com/in/luanfabruzzi/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="assents/js/script.js"></script>
 </body>
+
 </html>
