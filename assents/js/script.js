@@ -29,6 +29,68 @@ window.addEventListener('scroll', ()=>{
     bar.style.width = pct+'%';
 });
 
+/* NAV DRAWER */
+const navToggle = document.getElementById('navToggle');
+const navDrawer = document.getElementById('navDrawer');
+const navClose = document.getElementById('navClose');
+const navMask = document.getElementById('navMask');
+
+function closeNav() {
+    if (navDrawer) navDrawer.classList.remove('open');
+    if (navMask) navMask.classList.remove('visible');
+    if (navDrawer) navDrawer.setAttribute('aria-hidden', 'true');
+}
+
+function openNav() {
+    if (navDrawer) navDrawer.classList.add('open');
+    if (navMask) navMask.classList.add('visible');
+    if (navDrawer) navDrawer.setAttribute('aria-hidden', 'false');
+}
+
+if (navToggle) {
+    navToggle.addEventListener('click', openNav);
+}
+if (navClose) {
+    navClose.addEventListener('click', closeNav);
+}
+if (navMask) {
+    navMask.addEventListener('click', closeNav);
+}
+
+const navLinks = document.querySelectorAll('.nav-drawer .nav-links a');
+if (navLinks.length) {
+    navLinks.forEach(link => link.addEventListener('click', closeNav));
+}
+
+/* WHATSAPP FORM */
+const whatsappTarget = '5511963081053'; // substitua pelo seu número com DDI+DDD
+const whatsappForm = document.getElementById('whatsappForm');
+if (whatsappForm) {
+    whatsappForm.addEventListener('submit', e => {
+        e.preventDefault();
+
+        const name = document.getElementById('clientName').value.trim();
+        const role = document.getElementById('clientRole').value.trim();
+        const project = document.getElementById('projectName').value.trim();
+        const type = document.getElementById('projectType').value;
+        const description = document.getElementById('projectDescription').value.trim();
+
+        if (!name || !role || !project || !type || !description) {
+            alert('Por favor, preencha todos os campos antes de enviar.');
+            return;
+        }
+
+        const message = `Olá Luan! Gostaria de solicitar um orçamento para o meu projeto. Seguem os detalhes:
+*Nome / Empresa:* ${name}
+*Cargo / Função:* ${role}
+*Projeto:* ${project}
+*Tipo:* ${type}
+*Descrição:* ${description}`;
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappTarget}&text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    });
+}
+
 /* ACCORDION */
 document.querySelectorAll('.acc-trigger').forEach(btn=>{
     btn.addEventListener('click', ()=>{
